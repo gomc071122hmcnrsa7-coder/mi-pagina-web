@@ -1,0 +1,444 @@
+
+/* =====================================================
+   INSTITUCIÓN MONTREAL
+   Diseño visual: verde salvia, crema y verde profundo
+   No modifica las funciones ni la estructura de React
+   ===================================================== */
+
+.pagina-inicio,
+.pagina-mision-vision {
+    --montreal-fondo: #e5eee5;
+    --montreal-tarjeta: #f0f5e9;
+    --montreal-crema: #f8faf4;
+    --montreal-verde: #236b49;
+    --montreal-oscuro: #173b32;
+    --montreal-borde: #cbdccb;
+    --montreal-texto: #294538;
+    --montreal-secundario: #60796a;
+    --montreal-rojo: #d9273e;
+
+    background-color: var(--montreal-fondo) !important;
+    color: var(--montreal-texto) !important;
+}
+
+/* =====================================================
+   ENCABEZADO Y LOGOTIPO
+   ===================================================== */
+
+.pagina-inicio > header {
+    background: var(--montreal-oscuro) !important;
+    color: #f8faf4 !important;
+    border-bottom: 3px solid var(--montreal-verde);
+    box-shadow: 0 3px 15px rgba(23, 59, 50, 0.18) !important;
+}
+
+.pagina-inicio header h3,
+.pagina-inicio header small {
+    color: #f8faf4 !important;
+}
+
+.pagina-inicio header small {
+    opacity: 0.85;
+}
+
+.pagina-inicio header img {
+    border: 2px solid #d9ead7;
+}
+
+/* Menú de navegación */
+
+.pagina-inicio .inicio-nav {
+    color: #f0f5e9 !important;
+    background-color: transparent !important;
+    border: 1px solid #709783 !important;
+    transition: background-color 150ms, color 150ms, box-shadow 150ms;
+}
+
+.pagina-inicio .inicio-nav:hover,
+.pagina-inicio .inicio-nav.activo,
+.pagina-inicio .inicio-login {
+    color: #ffffff !important;
+    background-color: var(--montreal-verde) !important;
+    border-color: #70a482 !important;
+}
+
+.pagina-inicio .inicio-nav:active {
+    color: #ffffff !important;
+    background-color: var(--montreal-oscuro) !important;
+}
+
+.pagina-inicio .inicio-nav:focus-visible,
+.pagina-inicio .contacto-enlace:focus-visible {
+    outline: 3px solid #d9ead7 !important;
+    outline-offset: 4px;
+    box-shadow: none;
+}
+
+/* =====================================================
+   PORTADA PRINCIPAL
+   ===================================================== */
+
+.pagina-inicio > section:first-of-type {
+    background: linear-gradient(
+        115deg,
+        #173b32 0%,
+        #245a42 55%,
+        #367454 100%
+    ) !important;
+
+    color: #f8faf4 !important;
+}
+
+.pagina-inicio > section:first-of-type h1 {
+    color: #ffffff !important;
+}
+
+.pagina-inicio > section:first-of-type h1 span {
+    color: #d8ebd7 !important;
+}
+
+.pagina-inicio > section:first-of-type p {
+    color: #e0ebe1 !important;
+}
+
+/* Etiqueta de educación */
+
+.pagina-inicio > section:first-of-type .badge {
+    background-color: #d9ead7 !important;
+    color: #244c37 !important;
+}
+
+/* Botón para ver cursos */
+
+.pagina-inicio > section:first-of-type .btn-light {
+    background-color: #d9ead7 !important;
+    color: #244c37 !important;
+    border-color: #d9ead7 !important;
+}
+
+.pagina-inicio > section:first-of-type .btn-light:hover {
+    background-color: #f0f5e9 !important;
+}
+
+/* Botón secundario de portada */
+
+.pagina-inicio > section:first-of-type .btn-outline-light {
+    background-color: transparent !important;
+    color: #f8faf4 !important;
+    border-color: #a9cbb3 !important;
+}
+
+.pagina-inicio > section:first-of-type .btn-outline-light:hover {
+    background-color: #367454 !important;
+}
+
+/* Marco de las imágenes del logotipo */
+
+.pagina-inicio > section:first-of-type img {
+    border-radius: 15px;
+}
+
+/* =====================================================
+   BENEFICIOS Y TARJETAS
+   ===================================================== */
+
+.pagina-inicio > section:nth-of-type(2) {
+    background-color: var(--montreal-fondo) !important;
+    color: var(--montreal-texto) !important;
+}
+
+.pagina-inicio .card {
+    background-color: var(--montreal-tarjeta) !important;
+    color: var(--montreal-texto) !important;
+    border: 1px solid var(--montreal-borde) !important;
+    box-shadow: 0 5px 16px rgba(35, 75, 50, 0.07) !important;
+    transition: transform 180ms, box-shadow 180ms;
+}
+
+.pagina-inicio .card:hover {
+    box-shadow: 0 8px 20px rgba(35, 75, 50, 0.12) !important;
+}
+
+.pagina-inicio .card h5,
+.pagina-inicio .card h4,
+.pagina-inicio .card h3 {
+    color: #294f38 !important;
+}
+
+.pagina-inicio .card p,
+.pagina-inicio .text-muted {
+    color: var(--montreal-secundario) !important;
+}
+
+/* Círculos de iconos de las tarjetas */
+
+.pagina-inicio .card .rounded-circle {
+    background-color: #d9ead7 !important;
+    color: #245a42 !important;
+}
+
+/* =====================================================
+   SECCIÓN DE CURSOS
+   ===================================================== */
+
+.pagina-inicio #cursos {
+    background-color: #e5eee5 !important;
+    color: var(--montreal-texto) !important;
+}
+
+.pagina-inicio #cursos h2 {
+    color: #244c37 !important;
+}
+
+.pagina-inicio #cursos p {
+    color: var(--montreal-secundario) !important;
+}
+
+.pagina-inicio #cursos > .container > .d-flex .btn-outline-dark {
+    background-color: var(--montreal-tarjeta) !important;
+    color: #245a42 !important;
+    border-color: #b9cfba !important;
+}
+
+.pagina-inicio #cursos > .container > .d-flex .btn-outline-dark:hover {
+    background-color: #d5e6d2 !important;
+}
+
+/* =====================================================
+   SECCIÓN SOBRE MONTREAL
+   ===================================================== */
+
+.pagina-inicio #nosotros {
+    background-color: #dce9d9 !important;
+    color: var(--montreal-texto) !important;
+}
+
+.pagina-inicio #nosotros h2 {
+    color: #244c37 !important;
+}
+
+.pagina-inicio #nosotros > .container > .row > div > span {
+    color: var(--montreal-rojo) !important;
+}
+
+.pagina-inicio #nosotros p {
+    color: #526e5b !important;
+}
+
+.pagina-inicio #nosotros .btn-dark {
+    background-color: var(--montreal-verde) !important;
+    border-color: var(--montreal-verde) !important;
+    color: #ffffff !important;
+}
+
+.pagina-inicio #nosotros .btn-dark:hover {
+    background-color: var(--montreal-oscuro) !important;
+}
+
+/* =====================================================
+   LLAMADA FINAL
+   ===================================================== */
+
+.pagina-inicio > section:nth-of-type(5) {
+    background: linear-gradient(
+        120deg,
+        #173b32,
+        #245a42
+    ) !important;
+
+    color: #ffffff !important;
+}
+
+.pagina-inicio > section:nth-of-type(5) h2,
+.pagina-inicio > section:nth-of-type(5) p {
+    color: #ffffff !important;
+}
+
+.pagina-inicio > section:nth-of-type(5) .btn-light {
+    background-color: #d9ead7 !important;
+    border-color: #d9ead7 !important;
+    color: #244c37 !important;
+}
+
+/* =====================================================
+   UBICACIÓN Y MAPA
+   ===================================================== */
+
+.pagina-inicio #ubicacion {
+    background-color: var(--montreal-fondo) !important;
+    color: var(--montreal-texto) !important;
+}
+
+.pagina-inicio #ubicacion h2 {
+    color: #244c37 !important;
+}
+
+.pagina-inicio #ubicacion p,
+.pagina-inicio #ubicacion small {
+    color: var(--montreal-secundario) !important;
+}
+
+.pagina-inicio #ubicacion .btn-outline-dark {
+    background-color: var(--montreal-tarjeta) !important;
+    color: #245a42 !important;
+    border-color: #b9cfba !important;
+}
+
+.pagina-inicio #ubicacion .btn-outline-dark:hover {
+    background-color: #d5e6d2 !important;
+}
+
+/* =====================================================
+   PIE DE PÁGINA Y CONTACTO
+   ===================================================== */
+
+.pagina-inicio > footer {
+    background-color: var(--montreal-oscuro) !important;
+    color: #f0f5e9 !important;
+    border-top: 3px solid var(--montreal-verde);
+}
+
+.pagina-inicio > footer h5 {
+    color: #ffffff !important;
+}
+
+.pagina-inicio > footer p {
+    color: #d3e2d5 !important;
+}
+
+.pagina-inicio > footer small {
+    color: #c1d6c5 !important;
+}
+
+.pagina-inicio > footer hr {
+    border-color: #668776 !important;
+    opacity: 0.7;
+}
+
+/* Enlaces de contacto */
+
+.pagina-inicio .contacto-enlace {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #dcebdc !important;
+    margin-bottom: 16px;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.pagina-inicio .contacto-enlace svg {
+    flex-shrink: 0;
+}
+
+.pagina-inicio .contacto-enlace:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+/* =====================================================
+   ACCESIBILIDAD Y MOVIMIENTO
+   ===================================================== */
+
+.pagina-inicio :is(
+    button,
+    a,
+    input,
+    select,
+    textarea
+):focus-visible {
+    outline: 3px solid #76a987;
+    outline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+    .pagina-inicio > header .container {
+        justify-content: center;
+    }
+
+    .pagina-inicio > header nav {
+        justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pagina-inicio *,
+    .pagina-inicio *::before,
+    .pagina-inicio *::after {
+        transition: none !important;
+    }
+}
+
+
+
+
+
+
+/* Tarjeta de acceso al catálogo de cursos */
+.tarjeta-acceso-cursos {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 30px;
+    min-height: 190px;
+    background: #ffffff;
+    border: 1px solid #d7e2d6;
+    border-radius: 20px;
+    color: #234f43;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.tarjeta-acceso-cursos:hover {
+    transform: translateY(-5px);
+    border-color: #789d88;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-acceso-cursos:focus-visible {
+    outline: 3px solid #367b62;
+    outline-offset: 4px;
+}
+
+.tarjeta-cursos-icono {
+    display: flex;
+    flex: 0 0 78px;
+    width: 78px;
+    height: 78px;
+    align-items: center;
+    justify-content: center;
+    background: #edf3eb;
+    border-radius: 50%;
+    font-size: 38px;
+}
+
+.tarjeta-cursos-contenido {
+    flex: 1;
+}
+
+.tarjeta-cursos-contenido p {
+    color: #66766d;
+    line-height: 1.6;
+}
+
+.tarjeta-cursos-enlace {
+    display: inline-block;
+    padding: 9px 18px;
+    background: #244f43;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .tarjeta-acceso-cursos {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+    }
+}
